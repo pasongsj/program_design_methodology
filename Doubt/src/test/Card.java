@@ -1,3 +1,4 @@
+package test;
 
 class Card { // definitions that one can use to describe the value of a card:
 	  public static final String SPADES = "spades";
@@ -10,7 +11,7 @@ class Card { // definitions that one can use to describe the value of a card:
 	  public static final int QUEEN = 12;
 	  public static final int KING = 13;
 
-	  public static final int SIZE_OF_ONE_SUIT = 13;  // how many cards in one suit
+	  public static final int SIZE_OF_SUIT = 13;  // how many cards in one suit
 
 	  // These are the card's attributes:
 	  private String suit;

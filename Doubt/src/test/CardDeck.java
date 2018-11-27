@@ -1,8 +1,9 @@
+package test;
 class CardDeck
 {
   
   private int card_count;  // how many cards remain in the deck 
-  private Card[] deck = new Card[4 * Card.SIZE_OF_ONE_SUIT];
+  private Card[] deck = new Card[4 * Card.SIZE_OF_SUIT];
     // invariant: elements  deck[0]..deck[card_count - 1]  hold cards
 
   public CardDeck()
@@ -42,7 +43,7 @@ class CardDeck
 
   /** createSuit creates a suit of cards for a new card deck. */
   private void createSuit(String which_suit)
-  { for ( int i = 1;  i <= Card.SIZE_OF_ONE_SUIT;  i = i + 1 )
+  { for ( int i = 1;  i <= Card.SIZE_OF_SUIT;  i = i + 1 )
         { deck[getCard_count()] = new Card(which_suit, i);
           setCard_count(getCard_count() + 1);
         }
